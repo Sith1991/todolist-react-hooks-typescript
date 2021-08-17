@@ -1,8 +1,16 @@
 import React from 'react';
+import { BrowserRouter, Switch } from 'react-router-dom';
+
 import './App.scss';
 
-function App() {
-  return <div className="App">Hello World!</div>;
-}
+export const App: React.FC = () => {
+  return (
+    <BrowserRouter>
+      <div className="App container pt-4">
+        <Switch>
 
-export default App;
+        </Switch>
+      </div>
+    </BrowserRouter>
+  );
+};
